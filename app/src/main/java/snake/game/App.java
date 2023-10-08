@@ -4,11 +4,13 @@
 package snake.game;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
-    }
+  public static void main(String[] args) {
+    Arena arena = new Arena.Builder().height(25).width(100).tile("*").build();
+    System.out.println(arena);
+  }
+
+  public String getGreeting() {
+    return "Hello World!";
+  }
 }
